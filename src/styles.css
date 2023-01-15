@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-family: sans-serif;
+
+}
+
+.body {
+    display: flex;
+}
+
+.header {
+    display: flex;
+    background: #2874f0;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    padding: 5px;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 200px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.searchBox {
+    height: 40px;
+    width: 380px;
+    margin-left: 20px;
+    font-size: 18px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.searchIcon {
+    height: 30px;
+    width: 42px;
+    position: relative;
+    right: 52px;
+    background-color: white;
+}
+
+.LoginBtn {
+    height: 42px;
+    width: 150px;
+    font-size: 20px;
+    color: #2874f0;
+    font-weight: bold;
+}
+
+.sellerBtn {
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 0.002rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #2874f0;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #2874f0;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cartBtn {
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 0.002rem;
+    cursor: pointer;
+}
+
+.shoppingicon {
+    height: 33px;
+    width: 33px;
+    position: relative;
+    left: 28px;
+}
+
+.down {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 2px;
+    right: 7px;
+}
+
+.sortingToolbar {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.sortBy {
+    padding-left: 20px;
+    padding-top: 26px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.filterDiv {
+    border: 1px solid rgb(211, 204, 204);
+    box-shadow: 2px solid black;
+    width: 20vw;
+    height: 80vh;
+    margin: 20px;
+}
+
+.filters {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sortBtns {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.sizeBtn {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.genderBtn {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.clearBtn {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #2874f0;
+    font-weight: bold;
+}
+
+.cardView {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 25vw;
+    height: 60vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    justify-items: center;
+    align-items: center;
+    margin: 0.7rem;
+    border-radius: 7px;
+    box-shadow: rgba(63, 23, 23, 0.26) 0 10px 10px 3px, rgba(0, 0, 0, 0.1) 10px 10px 29px -1px;
+}
+
+.cardImage {
+    width: 160px;
+    justify-content: center;
+}
+
+.cardTitle {
+    color: #70a0ee;
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 700px){
+    .header {
+        width: 100vw;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+    
+    .searchBox {
+        height: 35px;
+        width: 300px;
+        margin-left: 10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    .searchIcon {
+        height: 10px;
+        width: 15px;
+        position: relative;
+        right: 15px;
+    }
+    
+    .LoginBtn {
+        height: 42px;
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    .sellerBtn {
+        color: white;
+        font-size: 16px;
+    }
+    .cartBtn {
+        color: white;
+        font-size: 16px;
+        margin-right: 40px;
+        border: none;
+        background: none;
+        font-weight: bold;
+        letter-spacing: 0.002rem;
+        cursor: pointer;
+    }
+    li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+    .card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 25vw;
+        height: 60vh;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        justify-items: center;
+        align-items: center;
+        margin-left: 2rem;
+        border-radius: 7px;
+        box-shadow: rgba(63, 23, 23, 0.26) 0 10px 10px 3px, rgba(0, 0, 0, 0.1) 10px 10px 29px -1px;
+    }
+
+    .cardImage {
+        width: 100px;
+        justify-content: left;
+    }
+
+    .filterDiv {
+        border: 1px solid rgb(211, 204, 204);
+        box-shadow: 2px solid black;
+        width: 20vw;
+        height: 82vh;
+        margin: 20px;
+    }
+
+    .filters {
+      
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .sizeBtn {
+        border: none;
+        background-color: white;
+        font-size: 18px;
+        padding-bottom: 20px;
+        width: 100px;
+        cursor: pointer;
+    }
+    
+    .genderBtn {
+        border: none;
+        background-color: white;
+        font-size: 18px;
+        padding-bottom: 20px;
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 450px) {
+    .header {
+        width: 140vw;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+    
+    .searchBox {
+        height: 35px;
+        width: 300px;
+        margin-left: 10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    .searchIcon {
+        height: 10px;
+        width: 15px;
+        position: relative;
+        right: 15px;
+    }
+    
+    .LoginBtn {
+        height: 38px;
+        width: 110px;
+        font-size: 12px;
+    }
+    
+    .sellerBtn {
+        color: white;
+        font-size: 13px;
+    }
+    .cartBtn {
+        color: white;
+        font-size: 14px;
+        margin-right: 40px;
+        border: none;
+        background: none;
+        font-weight: bold;
+        letter-spacing: 0.002rem;
+        cursor: pointer;
+    }
+    li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+    .card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 30vw;
+        height: 60vh;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        justify-items: center;
+        align-items: center;
+        margin-left: 2rem;
+        border-radius: 7px;
+        box-shadow: rgba(63, 23, 23, 0.26) 0 10px 10px 3px, rgba(0, 0, 0, 0.1) 10px 10px 29px -1px;
+    }
+
+    .cardImage {
+        width: 60px;
+        justify-content: left;
+    }
+    .filterDiv {
+        border: 1px solid rgb(211, 204, 204);
+        box-shadow: 2px solid black;
+        width: 20vw;
+        height: 82vh;
+    }
+
+    .filters {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .sizeBtn {
+        border: none;
+        background-color: white;
+        font-size: 12px;
+        padding-bottom: 20px;
+        width: 12vw;
+        cursor: pointer;
+        margin: 0px;
+    }
+    
+    
+    .genderBtn {
+        border: none;
+        background-color: white;
+        font-size: 12px;
+        padding-bottom: 20px;
+        width: 12vw;
+        cursor: pointer;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 450px) and (min-width: 100px) {
+    .header {
+        width: 220vw;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+    
+    .searchBox {
+        height: 35px;
+        width: 260px;
+        margin-left: 10px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    .searchIcon {
+        height: 10px;
+        width: 15px;
+        position: relative;
+        right: 15px;
+    }
+    
+    .LoginBtn {
+        height: 38px;
+        width: 110px;
+        font-size: 12px;
+    }
+    
+    .sellerBtn {
+        color: white;
+        font-size: 14px;
+    }
+    .cartBtn {
+        color: white;
+        font-size: 14px;
+        margin-right: 40px;
+        border: none;
+        background: none;
+        font-weight: bold;
+        letter-spacing: 0.002rem;
+        cursor: pointer;
+    }
+    li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+    .card {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:50vw;
+        height: 60vh;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        justify-items: center;
+        align-items: center;
+        margin-left: 10rem;
+        border-radius: 7px;
+        box-shadow: rgba(63, 23, 23, 0.26) 0 10px 10px 3px, rgba(0, 0, 0, 0.1) 10px 10px 29px -1px;
+    }
+
+    .cardImage {
+        width: 100px;
+        justify-content: left;
+    }
+    
+    .filterDiv {
+        border: 1px solid rgb(211, 204, 204);
+        box-shadow: 2px solid black;
+        width: 22vw;
+        height: 82vh;
+        
+    }
+
+    .filters {
+        font-weight: bold;
+        font-size: 16px;
+      
+    }
+    .sizeBtn {
+        border: none;
+        background-color: white;
+        font-size: 10px;
+        padding-bottom: 20px;
+        width: 15vw;
+        cursor: pointer;
+        margin: 0px;
+    }
+    
+    
+    .genderBtn {
+        border: none;
+        background-color: white;
+        font-size: 10px;
+        padding-bottom: 20px;
+        width: 15vw;
+        cursor: pointer;
+        margin: 0px;
+    }
+
+
+}
