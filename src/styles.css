@@ -235,7 +235,7 @@ li.dropdown {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 25vw;
-    height: 60vh;
+    height: 70vh;
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -316,7 +316,7 @@ li.dropdown {
         padding-top: 20px;
         padding-bottom: 20px;
         width: 25vw;
-        height: 60vh;
+        height: 70vh;
         background-color: #fff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -425,7 +425,7 @@ li.dropdown {
         padding-top: 20px;
         padding-bottom: 20px;
         width: 30vw;
-        height: 60vh;
+        height: 70vh;
         background-color: #fff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
@@ -534,7 +534,7 @@ li.dropdown {
         padding-top: 20px;
         padding-bottom: 20px;
         width:50vw;
-        height: 60vh;
+        height: 70vh;
         background-color: #fff;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
